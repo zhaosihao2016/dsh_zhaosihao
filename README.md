@@ -41,7 +41,7 @@
 ### 从 GitHub
 
 ```bash
-dsh plugin add github:zhaosihao2016/dsh_zhaosihao
+dsh plugin add github:zhaosihao2016/dsh-token-safety
 ```
 
 ### 从本地 bundle 目录（开发/内测）
@@ -157,7 +157,7 @@ node --input-type=module -e "
 "
 
 # 发 GitHub（需先建好远程仓库并 git push）
-dsh plugin add github:zhaosihao2016/dsh_zhaosihao
+dsh plugin add github:zhaosihao2016/dsh-token-safety
 ```
 
 ## 目录
