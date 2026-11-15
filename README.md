@@ -38,12 +38,6 @@
 
 需要 **DSH ≥ 0.1.1-rc.2**、**Node ≥ 22.19（或 ≥ 24）**。
 
-### 从 npm
-
-```bash
-dsh plugin add dsh-token-safety
-```
-
 ### 从 GitHub
 
 ```bash
@@ -161,12 +155,6 @@ node --input-type=module -e "
   import { detectCharCount } from './lib/detectors.js';
   console.log(detectCharCount('how many r in strawberry')); // r@3,8,9 (共3个)
 "
-
-# 产物检查
-npm pack --dry-run
-
-# 发 npm（需先 npm login）
-npm publish --access public
 
 # 发 GitHub（需先建好远程仓库并 git push）
 dsh plugin add github:zhaosihao2016/dsh_zhaosihao
