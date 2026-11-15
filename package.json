@@ -1,0 +1,43 @@
+{
+  "name": "dsh-token-safety",
+  "version": "0.1.0",
+  "description": "Detects and repairs tokenizer blind spots before model calls — appends a compact [精确验证参考] correction only when a blind spot is actually hit (char/substring counting, numeric comparison, text structure, special formats). Zero overhead on the common path.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "author": "dsh-token-safety contributors",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "tokenizer",
+    "blind-spot",
+    "pre-step",
+    "safety"
+  ],
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0 || >=24.0.0"
+  },
+  "optionalDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

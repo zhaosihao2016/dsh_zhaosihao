@@ -1,0 +1,13 @@
+{
+  "id": "dsh-external/dsh-token-safety",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "description": "Detects and repairs tokenizer blind spots (char counting, numeric comparison, text structure, special formats) by appending a compact [精确验证参考] correction only when a blind spot is hit.",
+  "engines": {
+    "dsh": ">=0.1.1-rc.2 <0.3.0"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": []
+  }
+}
